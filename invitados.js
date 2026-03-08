@@ -20,5 +20,5 @@ const invitados = {
   "G017": { nombre: "Lili y Cristian", cantidad: 2, grupo: "G017" },
   "G018": { nombre: "Tia Beba", cantidad: 1, grupo: "G018" },
   "G019": { nombre: "Agustina", cantidad: 1, grupo: "G019" },
-  "G020": { nombre: "Sofia", cantidad: 2, grupo: "G020" },
+  "G020": { nombre: "Laura y Matias", cantidad: 2, grupo: "G020" },
 };
