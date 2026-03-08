@@ -130,7 +130,6 @@
                         </div>
 
                         <!-- Campo oculto para enviar preferencias y cantidades -->
-                        <input type="hidden" name="preferencias_cantidades" id="preferencias_cantidades">
                         <input type="hidden" name="momentos_confirmados" id="momentos_confirmados">
 
                     </div>
@@ -141,19 +140,6 @@
                 </form>
             </div>
         </section>
-
-        <script>
-            // Habilitar/deshabilitar inputs de cantidad
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', () => {
-                    const inputNumber = checkbox.parentElement.querySelector('input[type="number"]');
-                    if (inputNumber) {
-                        inputNumber.disabled = !checkbox.checked;
-                        if (!checkbox.checked) inputNumber.value = "";
-                    }
-                });
-            });
-        </script>
 
         <section id="drive">
             <img src="./imagenes/camera.svg" alt="Icono camara de fotos" class="iconos" />
@@ -200,14 +186,6 @@
     </script>
 
 </body>
-<script>
-  window.addEventListener("load", () => {
-    fetch("https://tu-api.onrender.com/api/ping")
-      .then(() => console.log("Servidor despierto ✅"))
-      .catch(() => console.log("No se pudo despertar el servidor 😴"));
-  });
-</script>
-
 <script src="contador.js"></script>
 <script src="carrusel.js"></script>
 <script>
